@@ -1,0 +1,5 @@
+*.pdb
+Library
+Temp
+.vs
+Assets/StreamingAssets/AssetBundle
