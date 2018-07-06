@@ -2,4 +2,5 @@
 Library
 Temp
 .vs
+obj
 Assets/StreamingAssets/AssetBundle
