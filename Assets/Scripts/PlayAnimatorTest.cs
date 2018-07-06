@@ -16,7 +16,6 @@ public class PlayAnimatorTest : MonoBehaviour {
         if (animator != null)
         {
             AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
-            Debug.Log(info.normalizedTime);
         }
 	}
 }

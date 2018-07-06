@@ -61,6 +61,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayAnimatorTest.cs" />
     <Compile Include="Assets\Scripts\PlayAnimTest.cs" />
+    <Compile Include="Assets\Scripts\PointInCircle.cs" />
+    <Compile Include="Assets\Scripts\test.cs" />
     <None Include="Assets\Shaders\DuffuseShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>F:/testProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
