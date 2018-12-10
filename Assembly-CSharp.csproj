@@ -66,6 +66,7 @@
     <Compile Include="Assets\Arithmetic\SelectionSort.cs" />
     <Compile Include="Assets\Arithmetic\ShellSort.cs" />
     <Compile Include="Assets\Arithmetic\SortBase.cs" />
+    <Compile Include="Assets\Arithmetic\TestAction.cs" />
     <Compile Include="Assets\Arithmetic\UnityMath.cs" />
     <Compile Include="Assets\C#About\ClassA.cs" />
     <Compile Include="Assets\C#About\DelegateAndEvent.cs" />
