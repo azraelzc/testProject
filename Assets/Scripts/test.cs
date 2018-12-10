@@ -2,12 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test {
-    
-    public void TestHash()
+public class A
+{
+    public static string strText;
+    public string Text;
+    static A()
     {
-        LinkedList<int> link = new LinkedList<int>();
-        
-        
+        strText = "AAA";
+    }
+    public A()
+    {
+        Text = "AAAAAAAAAAAAAAAAAAAAAAAAAA";
+    }
+}
+public class B : A
+{
+    static B()
+    {
+        strText = "BBB";
+    }
+    public B()
+    {
+        Text = "BBBBBBBBBBBBBBBBB";
     }
 }
