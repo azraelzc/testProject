@@ -4,10 +4,10 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Unlit_NewUnlitShader
-  m_Shader: {fileID: 4800000, guid: 620ba5ff4a7935c4180ef044f70969db, type: 3}
+  m_Shader: {fileID: 4800000, guid: a67cd7461853dd446a20211173dd721b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -18,9 +18,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 051bd5f899cc6c041928b4ff949fd654, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: a35dc7c6c4394b649ac708d1b9f1d0d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 051bd5f899cc6c041928b4ff949fd654, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alpha: 0.139
+    - _BumpAmt: 0
+    - _Cutoff: 0.471
+    - _Glossiness: 0.5
+    - _Metallic: 0
+    m_Colors:
+    - _Color: {r: 0.3481293, g: 0.84368354, b: 1, a: 1}
+    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
