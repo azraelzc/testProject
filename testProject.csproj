@@ -238,6 +238,7 @@
     <Compile Include="Assets\physicalEngine\Shoot.cs" />
     <Compile Include="Assets\physicalEngine\TestForce.cs" />
     <Compile Include="Assets\physicalEngine\TestRotation.cs" />
+    <Compile Include="Assets\Scripts\MathTest.cs" />
     <Compile Include="Assets\Scripts\PlayAnimatorTest.cs" />
     <Compile Include="Assets\Scripts\PlayAnimTest.cs" />
     <Compile Include="Assets\Scripts\PointInCircle.cs" />
@@ -245,12 +246,16 @@
     <Compile Include="Assets\Scripts\VectorTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shaders\DuffuseShader.shader" />
+    <None Include="Assets\Shaders\FixedFunction\ff1.shader" />
+    <None Include="Assets\Shaders\FixedFunction\ff2.shader" />
     <None Include="Assets\Shaders\Ice.shader" />
+    <None Include="Assets\Shaders\ShaderFunction\sbin.cginc" />
+    <None Include="Assets\Shaders\ShaderFunction\vf2.shader" />
+    <None Include="Assets\Shaders\Surface\sf.shader" />
     <None Include="Assets\Shaders\SurfaceShader_001.shader" />
     <None Include="Assets\Shaders\SurfaceShader_002.shader" />
-    <None Include="Assets\Shaders\ff1.shader" />
-    <None Include="Assets\Shaders\ff2.shader" />
+    <None Include="Assets\Shaders\vfLesson\vf.shader" />
+    <None Include="Assets\Shaders\vfLesson\vf1.shader" />
     <None Include="Assets\testShader\Tutorial_Shader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

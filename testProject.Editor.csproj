@@ -295,12 +295,16 @@
     <Compile Include="Assets\Editor\ExportAssetBundle.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shaders\DuffuseShader.shader" />
+    <None Include="Assets\Shaders\FixedFunction\ff1.shader" />
+    <None Include="Assets\Shaders\FixedFunction\ff2.shader" />
     <None Include="Assets\Shaders\Ice.shader" />
+    <None Include="Assets\Shaders\ShaderFunction\sbin.cginc" />
+    <None Include="Assets\Shaders\ShaderFunction\vf2.shader" />
+    <None Include="Assets\Shaders\Surface\sf.shader" />
     <None Include="Assets\Shaders\SurfaceShader_001.shader" />
     <None Include="Assets\Shaders\SurfaceShader_002.shader" />
-    <None Include="Assets\Shaders\ff1.shader" />
-    <None Include="Assets\Shaders\ff2.shader" />
+    <None Include="Assets\Shaders\vfLesson\vf.shader" />
+    <None Include="Assets\Shaders\vfLesson\vf1.shader" />
     <None Include="Assets\testShader\Tutorial_Shader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,6 +7,7 @@
 
     SubShader
     {
+		Tags { "RenderType"="Opaque" "Queue"="transparent"}
         //表面着色器不需要Pass通道
         //使用的是CG语言进行编写
         CGPROGRAM

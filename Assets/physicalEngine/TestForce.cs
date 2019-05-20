@@ -9,12 +9,6 @@ public class TestForce : MonoBehaviour {
         Rigidbody rb = transform.GetComponent<Rigidbody>();
         rb.AddForce(new Vector3(0,1000,0));
         StartCoroutine(Test());
-
-        //B b = new B();
-        //A a = new A();
-
-        Debug.Log(A.strText);
-        Debug.Log(B.strText);
     }
 	
 	// Update is called once per frame
