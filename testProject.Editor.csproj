@@ -295,16 +295,17 @@
     <Compile Include="Assets\Editor\ExportAssetBundle.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shaders\FixedFunction\ff1.shader" />
-    <None Include="Assets\Shaders\FixedFunction\ff2.shader" />
+    <None Include="Assets\ShaderLesson\FixedFunction\ff1.shader" />
+    <None Include="Assets\ShaderLesson\FixedFunction\ff2.shader" />
+    <None Include="Assets\ShaderLesson\Lesson31+\vf31.shader" />
+    <None Include="Assets\ShaderLesson\Lesson9+\sbin.cginc" />
+    <None Include="Assets\ShaderLesson\Lesson9+\vf2.shader" />
+    <None Include="Assets\ShaderLesson\Surface\sf.shader" />
+    <None Include="Assets\ShaderLesson\vfLesson\vf.shader" />
+    <None Include="Assets\ShaderLesson\vfLesson\vf1.shader" />
     <None Include="Assets\Shaders\Ice.shader" />
-    <None Include="Assets\Shaders\ShaderFunction\sbin.cginc" />
-    <None Include="Assets\Shaders\ShaderFunction\vf2.shader" />
-    <None Include="Assets\Shaders\Surface\sf.shader" />
     <None Include="Assets\Shaders\SurfaceShader_001.shader" />
     <None Include="Assets\Shaders\SurfaceShader_002.shader" />
-    <None Include="Assets\Shaders\vfLesson\vf.shader" />
-    <None Include="Assets\Shaders\vfLesson\vf1.shader" />
     <None Include="Assets\testShader\Tutorial_Shader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
