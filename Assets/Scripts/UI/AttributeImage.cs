@@ -39,14 +39,15 @@ public class AttributeImage : Graphic {
 
     int radius = 200;
     void CalVertexPosition() {
-        if (VertexNum == 0 ) {
-            VertexNum = 5;
+        if (VertexNum < 3 ) {
+            VertexNum = 3;
         }
         
         pos.Clear();
         Vector2 v = new Vector2(0,200);
         pos.Add(v);
-        float rad = (360 / VertexNum) * Mathf.Deg2Rad;
+        float angle = 360f / VertexNum;
+        float rad = angle * Mathf.Deg2Rad;
         for (int i = 1;i < VertexNum;i++) {
             float x0 = v.x * Mathf.Cos(rad) - v.y * Mathf.Sin(rad);
             float y0 = v.x * Mathf.Sin(rad) + v.y * Mathf.Cos(rad);
