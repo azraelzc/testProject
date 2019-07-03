@@ -13,8 +13,12 @@ public class FindMostUnitNumberInCircle : MonoBehaviour {
     }
         // Update is called once per frame
     void Update () {
-		
-	}
+        Debug.LogError("===Update====" + Time.deltaTime + " : " + Time.realtimeSinceStartup);
+    }
+
+    void FixedUpdate() {
+        Debug.Log("===FixedUpdate====" + Time.fixedDeltaTime + " : " + Time.fixedTime);
+    }
 
     void OnDrawGizmos() {
         if(m_Theta < 0.0001f)

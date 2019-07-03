@@ -1,6 +1,7 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
 
+
 Shader "Sbin/vf31" {
 	SubShader{
 	
@@ -9,7 +10,9 @@ Shader "Sbin/vf31" {
 			#pragma vertex vert
 			#pragma fragment frag
 			#include "unitycg.cginc"
-			uniform float4x4 mvp;
+			float4x4 mvp;
+			float4x4 rm;
+			float4x4 sm;
 			struct v2f{
 				float4 pos:POSITION;
 			};
@@ -18,8 +21,10 @@ Shader "Sbin/vf31" {
 			v2f vert(appdata_base v)
 			{
 				v2f o;
-				//o.pos = UnityObjectToClipPos(v.vertex);
-				o.pos = mul(mvp,v.vertex);
+				//float4x4 m = UnityObjectToClipPos(rm);
+				float4x4 m = mul(mvp,sm);
+				o.pos = mul(m,v.vertex);
+				//o.pos = mul(mvp,v.vertex);
 				return o; 
 			}
 

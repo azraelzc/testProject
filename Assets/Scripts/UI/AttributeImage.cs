@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AttributeImage : Graphic {
+public class AttributeImage : Image {
 
     List<Vector2> pos = new List<Vector2>();
     VertexHelper vh = new VertexHelper();
