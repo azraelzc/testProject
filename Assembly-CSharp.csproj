@@ -67,12 +67,16 @@
      <Compile Include="Assets\ShaderLesson\Lesson9+\Uniform.cs" />
      <None Include="Assets\ShaderLesson\FixedFunction\ff2.shader" />
      <None Include="Assets\Shaders\SurfaceShader_002.shader" />
+     <None Include="Assets\ShaderLesson\Lesson36\Niuqu.shader" />
      <None Include="Assets\ShaderLesson\Lesson31+\vf35.shader" />
+     <None Include="Assets\ShaderLesson\Lesson36\Niuqu1.shader" />
      <None Include="Assets\ShaderLesson\Lesson9+\vf2.shader" />
      <None Include="Assets\ShaderLesson\Lesson31+\vf34.shader" />
+     <None Include="Assets\ShaderLesson\Lesson37\wave.shader" />
      <None Include="Assets\ShaderLesson\vfLesson\vf.shader" />
      <None Include="Assets\ShaderLesson\vfLesson\vf1.shader" />
      <None Include="Assets\Shaders\Ice.shader" />
+     <None Include="Assets\ShaderLesson\Lesson37\waterwave.shader" />
      <None Include="Assets\ShaderLesson\Surface\sf.shader" />
      <None Include="Assets\Shaders\SurfaceShader_001.shader" />
      <None Include="Assets\ShaderLesson\Lesson31+\vf33.shader" />
