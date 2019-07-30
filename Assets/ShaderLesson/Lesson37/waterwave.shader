@@ -25,7 +25,7 @@ Shader "Sbin/waterwave" {
 			
 			v2f vert(appdata_base v)
 			{
-				//v.vertex.y += _Amplipude * sin(-length(v.vertex.xz) * _Cycle + _Time.y *_Speed);
+				v.vertex.y += _Amplipude * sin(-length(v.vertex.xz) * _Cycle + _Time.y *_Speed);
 				v2f o;
 				o.pos = UnityObjectToClipPos(v.vertex);
 				o.color = fixed4(v.vertex.y,v.vertex.y,v.vertex.y,1);

@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: 93ad5b83b4cb6b74d9aaf6e39ae5ec2b
+timeCreated: 1560844346
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Footsteps
+    100004: Bip001 Head
+    100006: Bip001 L Calf
+    100008: Bip001 L Clavicle
+    100010: Bip001 L Finger0
+    100012: Bip001 L Finger01
+    100014: Bip001 L Finger1
+    100016: Bip001 L Finger11
+    100018: Bip001 L Foot
+    100020: Bip001 L Forearm
+    100022: Bip001 L ForeTwist
+    100024: Bip001 L Hand
+    100026: Bip001 L Thigh
+    100028: Bip001 L Toe0
+    100030: Bip001 L UpperArm
+    100032: Bip001 Neck
+    100034: Bip001 Pelvis
+    100036: Bip001 R Calf
+    100038: Bip001 R Clavicle
+    100040: Bip001 R Finger0
+    100042: Bip001 R Finger01
+    100044: Bip001 R Finger1
+    100046: Bip001 R Finger11
+    100048: Bip001 R Foot
+    100050: Bip001 R Forearm
+    100052: Bip001 R ForeTwist
+    100054: Bip001 R Hand
+    100056: Bip001 R Thigh
+    100058: Bip001 R Toe0
+    100060: Bip001 R UpperArm
+    100062: Bip001 Spine
+    100064: Bip001 Spine1
+    100066: Cap&Hair
+    100068: Dress_B_1
+    100070: Dress_B_2
+    100072: Dress_B_3
+    100074: Dress_B_4
+    100076: Dress_B_End
+    100078: Dress_F_1
+    100080: Dress_F_2
+    100082: Dress_F_3
+    100084: Dress_F_4
+    100086: Dress_F_End
+    100088: Dress_L_1
+    100090: Dress_L_2
+    100092: Dress_L_3
+    100094: Dress_L_4
+    100096: Dress_L_End
+    100098: Dress_R_1
+    100100: Dress_R_2
+    100102: Dress_R_3
+    100104: Dress_R_4
+    100106: Dress_R_End
+    100108: DressRibbon_B_1
+    100110: DressRibbon_B_2
+    100112: DressRibbon_B_3
+    100114: DressRibbon_B_End
+    100116: DressRibbon_F_1
+    100118: DressRibbon_F_2
+    100120: DressRibbon_F_3
+    100122: DressRibbon_F_End
+    100124: Feet
+    100126: Hair_B_1
+    100128: Hair_B_2
+    100130: Hair_B_3
+    100132: Hair_B_4
+    100134: Hair_B_End
+    100136: Hair_L_A_1
+    100138: Hair_L_A_2
+    100140: Hair_L_A_End
+    100142: Hair_L_B_1
+    100144: Hair_L_B_2
+    100146: Hair_L_B_End
+    100148: Hair_R_A_1
+    100150: Hair_R_A_2
+    100152: Hair_R_A_End
+    100154: Hair_R_B_1
+    100156: Hair_R_B_2
+    100158: Hair_R_B_End
+    100160: HairRibbon_F_1
+    100162: HairRibbon_F_2
+    100164: HairRibbon_F_3
+    100166: HairRibbon_F_End
+    100168: //RootNode
+    100170: Ribbons
+    100172: Zombie
+    400000: Bip001
+    400002: Bip001 Footsteps
+    400004: Bip001 Head
+    400006: Bip001 L Calf
+    400008: Bip001 L Clavicle
+    400010: Bip001 L Finger0
+    400012: Bip001 L Finger01
+    400014: Bip001 L Finger1
+    400016: Bip001 L Finger11
+    400018: Bip001 L Foot
+    400020: Bip001 L Forearm
+    400022: Bip001 L ForeTwist
+    400024: Bip001 L Hand
+    400026: Bip001 L Thigh
+    400028: Bip001 L Toe0
+    400030: Bip001 L UpperArm
+    400032: Bip001 Neck
+    400034: Bip001 Pelvis
+    400036: Bip001 R Calf
+    400038: Bip001 R Clavicle
+    400040: Bip001 R Finger0
+    400042: Bip001 R Finger01
+    400044: Bip001 R Finger1
+    400046: Bip001 R Finger11
+    400048: Bip001 R Foot
+    400050: Bip001 R Forearm
+    400052: Bip001 R ForeTwist
+    400054: Bip001 R Hand
+    400056: Bip001 R Thigh
+    400058: Bip001 R Toe0
+    400060: Bip001 R UpperArm
+    400062: Bip001 Spine
+    400064: Bip001 Spine1
+    400066: Cap&Hair
+    400068: Dress_B_1
+    400070: Dress_B_2
+    400072: Dress_B_3
+    400074: Dress_B_4
+    400076: Dress_B_End
+    400078: Dress_F_1
+    400080: Dress_F_2
+    400082: Dress_F_3
+    400084: Dress_F_4
+    400086: Dress_F_End
+    400088: Dress_L_1
+    400090: Dress_L_2
+    400092: Dress_L_3
+    400094: Dress_L_4
+    400096: Dress_L_End
+    400098: Dress_R_1
+    400100: Dress_R_2
+    400102: Dress_R_3
+    400104: Dress_R_4
+    400106: Dress_R_End
+    400108: DressRibbon_B_1
+    400110: DressRibbon_B_2
+    400112: DressRibbon_B_3
+    400114: DressRibbon_B_End
+    400116: DressRibbon_F_1
+    400118: DressRibbon_F_2
+    400120: DressRibbon_F_3
+    400122: DressRibbon_F_End
+    400124: Feet
+    400126: Hair_B_1
+    400128: Hair_B_2
+    400130: Hair_B_3
+    400132: Hair_B_4
+    400134: Hair_B_End
+    400136: Hair_L_A_1
+    400138: Hair_L_A_2
+    400140: Hair_L_A_End
+    400142: Hair_L_B_1
+    400144: Hair_L_B_2
+    400146: Hair_L_B_End
+    400148: Hair_R_A_1
+    400150: Hair_R_A_2
+    400152: Hair_R_A_End
+    400154: Hair_R_B_1
+    400156: Hair_R_B_2
+    400158: Hair_R_B_End
+    400160: HairRibbon_F_1
+    400162: HairRibbon_F_2
+    400164: HairRibbon_F_3
+    400166: HairRibbon_F_End
+    400168: //RootNode
+    400170: Ribbons
+    400172: Zombie
+    2100000: 'Material #18'
+    2100002: 'Material #17'
+    2100004: 'Material #19'
+    2100006: 'Material #20'
+    4300000: Zombie
+    4300002: Cap&Hair
+    4300004: Ribbons
+    4300006: Feet
+    7400000: Idle
+    7400002: Attack1
+    7400004: Run
+    7400006: Skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Cap&Hair
+    13700002: Feet
+    13700004: Ribbons
+    13700006: Zombie
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #17'
+    second: {fileID: 2100000, guid: 51b10904011febf4d96849e4e538ae60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #18'
+    second: {fileID: 2100000, guid: 51b10904011febf4d96849e4e538ae60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #19'
+    second: {fileID: 2100000, guid: 51b10904011febf4d96849e4e538ae60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #20'
+    second: {fileID: 2100000, guid: 51b10904011febf4d96849e4e538ae60, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 114
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skill
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
