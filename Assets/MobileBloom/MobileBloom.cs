@@ -16,7 +16,17 @@ public class MobileBloom : MonoBehaviour{
     static readonly int bloomTexString = Shader.PropertyToID("_BloomTex");
     public Material material=null;
 
-	void  OnRenderImage (RenderTexture source ,   RenderTexture destination){
+    RenderTexture texture;
+    Camera mCamera;
+    private void OnPreRender() {
+
+    }
+
+    private void OnPostRender() {
+        
+    }
+
+    void  OnRenderImage (RenderTexture source ,   RenderTexture destination){
         material.SetFloat(blurAmountString, BlurAmount/2.0f);
 		material.SetFloat(fadeAmountString, FadeAmount);
         RenderTexture buffer = RenderTexture.GetTemporary(scrWidth, scrHeight, 0,source.format);
