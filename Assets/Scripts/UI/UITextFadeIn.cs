@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UITextFadeIn : MonoBehaviour {
 
-    Text obj;
-    TextMesh objMesh;
+    Text label;
+    TextMesh lableMesh;
 
     public float dt = 0.001f;//打字间隔时间
     public float showingTime = 1f;//显示使用的时间
@@ -16,10 +16,9 @@ public class UITextFadeIn : MonoBehaviour {
     Action onComplete;
     bool _isPlaying;
     string _text;
-    StringBuilder sb;
     // Start is called before the first frame update
     void Start() {
-        Play("我<color=#FF0000>迷</color>迷糊糊", 10);
+        Play("我<color='#00ffffff'>帅哥</color>啊",10,1);
     }
 
     // Update is called once per frame
@@ -34,22 +33,23 @@ public class UITextFadeIn : MonoBehaviour {
         };
     }
 
-    public void Play(string text, float speed) {
-        if (obj == null) {
-            obj = GetComponent<Text>();
-            objMesh = GetComponent<TextMesh>();
+    public void Play(string text, float speed, float fadeTime) {
+        if (label == null) {
+            label = GetComponent<Text>();
+            lableMesh = GetComponent<TextMesh>();
         }
         dt = 1 / speed;
+        showingTime = fadeTime;
         _isPlaying = true;
         _text = text;
         StartCoroutine(Typing(_text));
     }
 
     public void ShowAllText() {
-        if (obj) {
-            obj.text = _text;
-        } else if (objMesh) {
-            objMesh.text = _text;
+        if (label) {
+            label.text = _text;
+        } else if (lableMesh) {
+            lableMesh.text = _text;
         }
         onComplete?.Invoke();
     }
@@ -61,10 +61,11 @@ public class UITextFadeIn : MonoBehaviour {
         float timeScale;
         int a = 0;
         bool start = false;
+        GetRichTextDataList(text);
         //-----
-        if (obj) {
+        if (label && label.gameObject.activeSelf) {
             while ((index < text.Length || a < 255) && _isPlaying) {
-                obj.text = "";
+                label.text = "";
                 timeScale = 256 / (index * showingTime);
                 aTime = (Time.time - Startime) * timeScale;
                 for (int i = 0; i <= index && i < text.Length; i++) {
@@ -72,33 +73,33 @@ public class UITextFadeIn : MonoBehaviour {
                     a = Mathf.Clamp(a, 0, 255);
 
                     if (a == 255 && i == 0 && start == false) {
-                        obj.text += "<color=#" + ColorToHex(obj.color) + "ff>";
+                        label.text += "<color=#" + ColorToHex(label.color) + "ff>";
                         start = true;
                     }
                     if (a == 255 && start) {
-                        obj.text += text[i];
+                        label.text += text[i];
                         continue;
                     }
                     if (a != 255 && start) {
                         start = false;
-                        obj.text += "</color>";
+                        label.text += "</color>";
                     }
 
                     string aStr = Convert.ToString(a, 16);
                     aStr = (aStr.Length == 1 ? "0" : "") + aStr;
-                    obj.text += "<color=#" + ColorToHex(obj.color) + aStr + ">" + text[i] + "</color>";
+                    label.text += "<color=#" + ColorToHex(label.color) + aStr + ">" + text[i] + "</color>";
                 }
                 if (a == 255 && start)
-                    obj.text += "</color>";
+                    label.text += "</color>";
                 if (Time.time - dTime >= dt) {
                     dTime = Time.time;
                     index++;
                 }
                 yield return 0;
             }
-        } else {
+        } else if (lableMesh && lableMesh.gameObject.activeSelf) {
             while (index < text.Length || a < 255) {
-                objMesh.text = "";
+                lableMesh.text = "";
                 timeScale = 256 / (index * showingTime);
                 aTime = (Time.time - Startime) * timeScale;
                 for (int i = 0; i <= index && i < text.Length; i++) {
@@ -106,24 +107,24 @@ public class UITextFadeIn : MonoBehaviour {
                     a = Mathf.Clamp(a, 0, 255);
 
                     if (a == 255 && i == 0 && start == false) {
-                        objMesh.text += "<color=#" + ColorToHex(objMesh.color) + "ff>";
+                        lableMesh.text += "<color=#" + ColorToHex(lableMesh.color) + "ff>";
                         start = true;
                     }
                     if (a == 255 && start) {
-                        objMesh.text += text[i];
+                        lableMesh.text += text[i];
                         continue;
                     }
                     if (a != 255 && start) {
                         start = false;
-                        objMesh.text += "</color>";
+                        lableMesh.text += "</color>";
                     }
 
                     string aStr = Convert.ToString(a, 16);
                     aStr = (aStr.Length == 1 ? "0" : "") + aStr;
-                    objMesh.text += "<color=#" + ColorToHex(objMesh.color) + aStr + ">" + text[i] + "</color>";
+                    lableMesh.text += "<color=#" + ColorToHex(lableMesh.color) + aStr + ">" + text[i] + "</color>";
                 }
                 if (a == 255 && start)
-                    objMesh.text += "</color>";
+                    lableMesh.text += "</color>";
                 if (Time.time - dTime >= dt) {
                     dTime = Time.time;
                     index++;
@@ -142,5 +143,18 @@ public class UITextFadeIn : MonoBehaviour {
         int a = Mathf.RoundToInt(color.a * 255.0f);
         string hex = string.Format("{0:X2}{1:X2}{2:X2}", r, g, b);
         return hex;
+    }
+
+    List<RichTextData> GetRichTextDataList(string text) {
+        Debug.LogError("==GetRichTextDataList=="+ text.Length);
+        string[] splitStr = Regex.Split(text, "</color>");
+        for (int i = 0; i < splitStr.Length; i++) {
+
+        }
+        return null;
+    }
+
+    class RichTextData {
+
     }
 }

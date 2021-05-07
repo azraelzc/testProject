@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
@@ -24,14 +25,13 @@ public class TextVertical : MonoBehaviour {
     public int _fontSize = 14;
     public Font _font;
     public Color _color = Color.white;
-    public float _speed = 10;
     public int _lineSpace = 0;
 
     List<GameObject> _gameObjects = new List<GameObject>();
     Queue<string> lineStrQueue = new Queue<string>();
+
     // Start is called before the first frame update
     void Start() {
-        ShowText(_input_str);
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class TextVertical : MonoBehaviour {
 
     }
 
-    public void ShowText(string inputStr) {
+    public void Play(string inputStr) {
         lineStrQueue.Clear();
         string[] lines = inputStr.Split('\n');
         int length = lines.Length;
@@ -49,10 +49,11 @@ public class TextVertical : MonoBehaviour {
             Text text;
             if (_gameObjects.Count > i) {
                 go = _gameObjects[i];
-                text = GetComponent<Text>();
+                text = go.GetComponent<Text>();
             } else {
                 go = new GameObject("Line" + (i + 1));
                 go.transform.SetParent(transform, false);
+                go.layer = 5;
                 text = go.AddComponent<Text>();
                 text.horizontalOverflow = HorizontalWrapMode.Wrap;
                 text.verticalOverflow = VerticalWrapMode.Overflow;
@@ -123,26 +124,12 @@ public class TextVertical : MonoBehaviour {
                 default:
                     break;
             }
-            text.text = "";
-            lineStrQueue.Enqueue(s);
+            text.text = s;
         }
         if (length < _gameObjects.Count) {
             for (int i = length; i < _gameObjects.Count; i++) {
                 _gameObjects[i].GetComponent<Text>().text = "";
             }
-        }
-        PlayFadeIn(0);
-    }
-
-    void PlayFadeIn(int index) {
-        if (lineStrQueue.Count > 0) {
-            string s = lineStrQueue.Dequeue();
-            GameObject go = _gameObjects[index];
-            UITextFadeIn textFadeIn = go.GetComponent<UITextFadeIn>();
-            textFadeIn.OnComplete(() => {
-                PlayFadeIn(index + 1);
-            });
-            textFadeIn.Play(s, _speed);
         }
     }
 
