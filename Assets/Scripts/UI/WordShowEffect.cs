@@ -180,8 +180,8 @@ public class WordShowEffect : BaseMeshEffect {
 
     public void InitTextLen() {
         StringBuilder sb = GetOnlyWord(_oldText, _text.supportRichText);
-        Debug.LogError(sb.Length);
         textLen = sb.Length;
+        Debug.LogError("text len : " + textLen + " : " + sb.ToString());
     }
 
     StringBuilder GetOnlyWord(string value, bool richTextEnabled) {
@@ -209,6 +209,12 @@ public class WordShowEffect : BaseMeshEffect {
                         continue;
                     }
                 }
+            }
+            if (c == ' ') {
+                continue;
+            }
+            if (c == '\n') {
+                continue;
             }
             if (i >= startIndex) buffer.Append(c);
 
@@ -331,13 +337,14 @@ public class LeftToRightAlpha : WordAlphaEffectBase {
         if (verts.Count == 0)
             return;
         int count = currentWordIndex * 6;
-
+        //Debug.Log("==ModifyMesh==" + currentWordIndex);
         SetColor(verts, currentWordIndex, updateNum);
         AddVert(vh, verts, count);
         AddTriangle(vh, count);
     }
 
     private void AddVert(VertexHelper vh, List<UIVertex> verts, int count) {
+        //Debug.Log("===AddVert=="+ verts.Count + ":"+count);
         for (int i = 0; i < count; i += 6) {
             var tl = verts[i + 0];
             var tr = verts[i + 1];
@@ -353,7 +360,6 @@ public class LeftToRightAlpha : WordAlphaEffectBase {
             vh.AddVert(ct);
             vh.AddVert(cb);
         }
-
     }
 
     private void AddTriangle(VertexHelper vh, int count) {
